@@ -1,0 +1,87 @@
+:root {
+  --unit: 8px;
+  --gap: calc(var(--unit) * 2);
+  --container-width: 1232px;
+
+  --button-color: #3A4576;
+  --white: #FFFFFF;
+  --lite-black: #3D3B3C;
+  --black: #120D0E;
+  --grey: #BEBEBE;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+
+  text-decoration: none;
+}
+
+.svg-sprites {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(var(--container-width) + var(--unit) * 4);
+  padding: 0 calc(var(--unit) * 2);
+  margin: 0 auto;
+}
+
+nav a {
+  color: var(--lite-black);
+  font-weight: 400;
+  font-size: 24px;
+}
+
+nav a:hover {
+  color: var(--black);
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+header h1 {
+  font-weight: 500;
+  font-size: 56px;
+  color: var(--black);
+}
+
+header h2 {
+  font-weight: 500;
+  font-size: 56px;
+  color: var(--grey);
+}
+
+header p {
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--black);
+}
+
+.text-header__button {
+  width: 185px;
+  height: 56px;
+  background-color: var(--button-color);
+  color: var(--white);
+  text-align: center;
+  padding: 14px 20px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.star-black {
+  width: 16px;
+  height: 16px;
+}
+
+.star-grey {
+  width: 16px;
+  height: 16px;
+}
+
